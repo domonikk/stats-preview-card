@@ -1,6 +1,7 @@
 body{
     background-color:hsl(233, 47%, 7%);  
-    Font-size: 15px;
+    Font-size: 15px; 
+    align-items: center;
 }
 
 container{ 
@@ -71,10 +72,6 @@ p{
     padding-bottom: 60px;
 } 
 
-.attribution{
-    color:  hsla(0, 0%, 100%, 0.6);  
-    
-} 
 
 #overlay{
     background-color: rgba(87, 15, 131, 0.6);
@@ -104,4 +101,12 @@ Info2{
     word-spacing: 54px;  
     line-height: 2rem;
     letter-spacing: 1.2px;
-}
+}  
+
+.attribution{
+    color:hsla(0, 0%, 100%, 0.6); 
+    font-family: 'Lexend Deca', sans-serif;  
+    padding-top: 30px;
+    margin-left: 150px; 
+} 
+
