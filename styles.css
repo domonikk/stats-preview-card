@@ -1,112 +1,116 @@
-body{
+
+body{ 
     background-color:hsl(233, 47%, 7%);  
-    Font-size: 15px; 
-    align-items: center;
-}
-
-container{ 
-   width: 100%;  
-   height: 100%;
-   background-color:hsl(233, 47%, 7%); 
-
-   @media screen and (max-width: 375px){
-       padding: 100px 0; 
-       width: 100%; 
-   }
+    justify-items: center;
+    padding: 110px;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 400; 
 }  
 
-Cardwrapper{
-    display: grid; 
-    z-index:1;  
-    height: 100%; 
-    width:100%; 
-    max-width: 1440px;  
-    background-color:hsl(233, 47%, 7%); 
-    justify-content: center; 
-    margin-left: auto; 
-    margin-right: auto;
 
-} 
 
-InfoRow{
-    display: grid; 
-    grid-auto-columns: minmax(auto, 1fr); 
-    align-items: center; 
-    grid-template-areas: "col1 col2";
-
-    @media and screen (max-width:375px){
-        grid-template-areas: "col1 col2";
-    }
-} 
-
-Column1{
-    padding: 40px 80px 60px 50px;  
-    margin-left: 80px; 
-    margin-top: 145px;
-    background-color: hsl(244, 38%, 16%); 
-    grid-area: col1;
-} 
-
-Column2{
-    padding: 0 0 0 0; 
-    margin-top: 150px;
-    grid-area: col2;   
+.info{
     
-} 
-
-H1{
-    font-family: 'Inter', sans-serif; 
-    font-weight: 700; 
-    color: hsl(0, 0%, 100%); 
-    margin-top: 0; 
-    font-size: 32px; 
-    padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1; 
 }
 
-p{
+
+InfoSection{   
+    display: flex;
+    justify-items: center; 
+    background-color: hsl(244, 38%, 16%);      
+}  
+
+
+container{  
+   display: flex; 
+   flex-direction: row; 
+   flex-wrap: wrap;
+   border-radius: 15px; 
+   width: 100%; 
+   justify-content: space-between;
+}  
+ 
+.left{
+   justify-content: center; 
+   justify-items: center; 
+   padding-left: 60px; 
+   padding-top: 50px; 
+} 
+
+.right .overlay{
+    position: absolute; 
+    background-color: rgba(87, 15, 131, 0.6);
+    width: 100%;  
+    overflow: hidden;
+    
+    
+}
+
+.left H1 {  
+    font-weight: 700; 
+    color: hsl(0, 0%, 100%);   
+}
+
+
+
+InfoSection p{
     font-family: 'Lexend Deca', sans-serif; 
     font-weight: 400; 
     color:hsla(0, 0%, 100%, 0.75); 
-    line-height: 1.6;  
-    padding-top: 15px; 
-    padding-bottom: 60px;
+    line-height: 1.5em;
+} 
+  
+InfoSection H1 span{
+    color: hsl(277, 64%, 61%);
 } 
 
+InfoSection ul {
+    display:flex;  
+    flex-flow: row;
+    width: 30vw;  
+    list-style: none; 
+    justify-content: space-around; 
+    letter-spacing: 1px;  
+    padding: 30px  0   0   0;
+    
+} 
+
+
+InfoSection ul p{
+    font-family: "Lexend Deca", sans-serif; 
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase; 
+    font-size:12px; 
+
+} 
+
+
+InfoSection h2{
+    color: hsl(0, 0%, 100%);
+   
+}
 
 #overlay{
     background-color: rgba(87, 15, 131, 0.6);
     color: #ffffff; 
-    top: 158px;
-    left: 50%;
-    clear: float;
-    width: 42%;
-    height: 64%; 
+    top: 118px;
+    left: 49.2%;
+    width: 41.8%;
+    height: 64.8%; 
     position:absolute;
 }
 
-Info{
-    font-family: 'Inter', sans-serif; 
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.75rem;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 10px; 
     color: hsl(0, 0%, 100%);
-    font-weight: 700;
-    font-size: 25px; 
-    word-spacing: 80px; 
 } 
-
-Info2{
-    font-family:  'Lexend Deca', sans-serif;    
-    color:hsl(0, 0%, 100%, 0.6); 
-    font-weight: 400; 
-    text-transform: uppercase; 
-    font-size: 12px; 
-    word-spacing: 54px;  
-    line-height: 2rem;
-    letter-spacing: 1.2px;
-}  
-
-.attribution{
-    color:hsla(0, 0%, 100%, 0.6); 
-    font-family: 'Lexend Deca', sans-serif;  
-    padding-top: 30px;
-    margin-left: 150px; 
-} 
-

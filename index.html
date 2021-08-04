@@ -13,28 +13,40 @@
   <title>Frontend Mentor | Stats preview card component</title> 
 
 </head>
-<body> 
-  <Container> 
-    <Cardwrapper>  
-      <InfoRow>
-        <Column1>  
-          <H1>Get <span style="color:hsl(277, 64%, 61%)">
-            insights</span> that help <br> your business grow.</H1> 
-          <p>  Discover the benefits of data analytics and make <br>better decisions regarding revenue, customer <br> experience, and overall efficiency.</p> 
-          <Info>10k+   314   12M+</Info> 
-          <br>
-          <Info2>companies  templates  queries</Info2>
-        </Column1> 
-        <Column2>  
-          <img src="images/image-header-desktop.jpg" alt:"company"/> 
-          <div id="overlay"></div>
-        </Column2> 
-      </InfoRow>
-    </Cardwrapper>
-  </Container>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Domonique Eccleston</a>.
-  </div>
-</body>
+  <body>
+   <InfoSection>   
+     <container> 
+       <div class="info">
+         <div class="left">
+            <H1>Get <span>insights</span> that help <br> your business grow.</H1> 
+            <p>  Discover the benefits of data analytics and make <br>better decisions regarding revenue, customer <br> experience, and overall efficiency.</p>  
+            <ul> 
+              <li>
+                <h2> 10k+ </h2> 
+                <p>companies</p>
+              </li> 
+              <li>
+                <h2> 314 </h2> 
+                <p> templates </p> 
+              </li> 
+              <li> 
+                <h2>12M+</h2> 
+                <p>queries</p>
+              </li>
+            </ul>  
+          </div>
+       </div> 
+       <div class="info">
+          <div class="right">    
+            <img src="./images/image-header-desktop.jpg" id="img"/>  
+            <div id="overlay"></div>
+          </div>  
+        </div>
+      <container/>
+    </InfoSection>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Domonique Eccleston</a>.
+    </div>  
+ </body>
 </html>
