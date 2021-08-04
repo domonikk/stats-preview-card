@@ -34,6 +34,18 @@ container{
    justify-content: space-between;
 }  
  
+.right {  
+  
+    width: 540px;
+    min-width: 200px; 
+    height: 100%; 
+    min-height: 50%;
+    background: url('./images/image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+} 
+
 .left{
    justify-content: center; 
    justify-items: center; 
@@ -44,10 +56,8 @@ container{
 .right .overlay{
     position: absolute; 
     background-color: rgba(87, 15, 131, 0.6);
-    width: 100%;  
-    overflow: hidden;
-    
-    
+    width: 100%;   
+    overflow: hidden;   
 }
 
 .left H1 {  
@@ -98,9 +108,8 @@ InfoSection h2{
     background-color: rgba(87, 15, 131, 0.6);
     color: #ffffff; 
     top: 118px;
-    left: 49.2%;
-    width: 41.8%;
-    height: 64.8%; 
+    width: 42%;
+    height: 66.8%; 
     position:absolute;
 }
 
@@ -113,4 +122,110 @@ InfoSection h2{
     text-align: center;
     margin-bottom: 10px; 
     color: hsl(0, 0%, 100%);
-} 
+}  
+
+@media screen and (max-width: 375px){ 
+
+    body {
+        flex-direction: column; 
+        margin-left:-70px; 
+        
+    } 
+
+    InfoSection{
+        display: flex;
+        justify-items: center; 
+        justify-content: center;
+        background-color: hsl(244, 38%, 16%);  
+        padding: 0 0 0 0;  
+        width: 300px;
+    }  
+    
+    container{  
+        display: flex; 
+        flex-direction: column-reverse; 
+        flex-wrap: wrap;
+        border-radius: 15px; 
+        
+    }  
+     
+    .left{
+        justify-content: center; 
+        justify-items: center; 
+        padding-left: 60px; 
+        padding-top: 50px; 
+    } 
+  
+    .right {  
+  
+        height: 220px;
+        width: 300px;
+        border-radius: 10px 10px 0 0; 
+        background: url('./images/image-header-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+    } 
+    
+    #overlay{
+        background-color: rgba(87, 15, 131, 0.6);
+        color: #ffffff; 
+        top: 118px;
+        width: 80.4%;
+        height: 33.3%;  
+        position:absolute;  
+        border-radius: 10px 10px 0 0;
+    } 
+
+    .left H1 {  
+        font-weight: 700; 
+        color: rgb(255, 255, 255);  
+        margin-left: -60px;
+        font-size: 6.4vw; 
+        text-align: center;
+    } 
+
+    InfoSection p{
+        font-family: 'Lexend Deca', sans-serif; 
+        font-weight: 400; 
+        color:hsla(0, 0%, 100%, 0.75); 
+        line-height: 2.5em; 
+        margin-left: -50px; 
+        font-size: 0.8rem;
+        text-align: center; 
+        padding: 20px 10px 0 10px;
+    }  
+
+    InfoSection ul {
+        display:flex;  
+        flex-flow: column;
+        width: 30vw;  
+        justify-items: center;
+        justify-content: center; 
+        letter-spacing: 1px;  
+        padding: 10px  0   0   60px; 
+        
+    } 
+    
+    InfoSection ul p{
+        font-family: "Lexend Deca", sans-serif; 
+        color: hsla(0, 0%, 100%, 0.6);
+        text-transform: uppercase; 
+        font-size:12px;  
+        line-height: 0px;
+        padding-top: 2px;
+    
+    } 
+    
+    
+    .attribution {
+        position: relative;
+        font-size: 0.75rem;
+        line-height: 20px;
+        text-align: center;  
+        color: hsl(0, 0%, 100%);
+    }  
+    
+    
+
+}
